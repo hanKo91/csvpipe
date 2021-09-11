@@ -1,4 +1,4 @@
-from pipeline import csv_pipeline
+from pipe import csv_pipeline
 
 def to_float(row_index, row, args):
     for column_name in list(row.keys()):
