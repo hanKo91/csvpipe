@@ -1,15 +1,7 @@
 import csv
 import sys
 
-
 class csv_pipeline():
-	""" 
-															--- drain0 --> csv-file
-															| 
-	csv-file -> - init -- preproc0 -- preproc1 -- preprocN -|-- drain1 --> csv-file
-															|
-															--- drainN --> csv-file
-	"""
 
 	init_args = [
 		{
