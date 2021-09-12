@@ -1,7 +1,7 @@
 import csv
 import sys
 
-class csv_pipeline():
+class csv_pipeline:
 
 	init_args = [
 		{
