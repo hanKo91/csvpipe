@@ -10,7 +10,7 @@ setup(
     packages=find_packages(
       include=
       [
-        "pipe", "pipe.*",
+        "csvpipe", "csvpipe.*",
         "test", "test.*"
       ]
     ),
