@@ -1,4 +1,4 @@
-from pipe import csv_pipeline
+from pipe.pipe import csv_pipeline
 
 def to_float(row_index, row, args):
 	for column_name in list(row.keys()):
@@ -61,7 +61,7 @@ only_first_column_divby2_args = {
 	}
 }
 
-pipe = csv_pipeline(inPath="./ref.csv", buffer=4)
+pipe = csv_pipeline(inPath="../data/ref.csv", buffer=4)
 
 pipe.add_preproc(to_float, to_float_args)
 

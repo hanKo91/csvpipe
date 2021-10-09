@@ -7,6 +7,12 @@ setup(
     author='Dominik Hanko',
     author_email='dominik.hanko91@gmail.com',
     description='Simple csv data pipeline creation',
-    packages=find_packages(),
-    include_package_date=True
+    packages=find_packages(
+      include=
+      [
+        "pipe", "pipe.*",
+        "test", "test.*"
+      ]
+    ),
+    data_files=[('reference', ['data/ref.csv'])]
 )
